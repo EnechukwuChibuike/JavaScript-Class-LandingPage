@@ -1,0 +1,418 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 15vh;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.menuIcon {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./images/heroBg.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: monospace;
+  gap: 10px;
+}
+
+.heroSection h1 {
+  font-size: 5vw;
+}
+
+.heroSection p {
+  font-size: 3vw;
+}
+
+.heroSection button {
+  border: none;
+  background-color: #b986b7;
+  padding: 20px 40px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* .....................................Who we are...................................  */
+
+.about,
+.contact,
+.testimonial,
+.partners {
+  padding: 70px;
+}
+
+.about section {
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about section img {
+  height: 100%;
+  width: 45%;
+}
+
+.about section article {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about article button {
+  width: 120px;
+  padding: 10px 0px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+/* ....................................What We Do...............................  */
+
+.services {
+  padding: 70px;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.fig {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.fig figure {
+  height: 70vh;
+  width: 30%;
+  border: 1px solid gray;
+}
+
+figure img {
+  height: 40vh;
+  width: 100%;
+}
+
+figcaption {
+  padding: 10px;
+}
+
+figcaption h2 {
+  margin-bottom: 10px;
+}
+
+/* .............................Contact Us....................  */
+
+.contactAddress {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin-top: 50px;
+}
+
+.address {
+  border: 1px solid black;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.address a {
+  font-size: 20px;
+}
+
+.contactAddress form {
+  width: 45%;
+  border: 1px solid gray;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.contactAddress form div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 5px;
+}
+
+.contactAddress form div input {
+  outline: none;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.contactAddress form div textarea {
+  height: 90px;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.contactAddress form div button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: blue;
+  border: none;
+  font-weight: bold;
+}
+
+/* ...............................testimonnial.....................  */
+
+.testimonial {
+  background-color: whitesmoke;
+}
+
+.testimony {
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.testimony figure {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 0px;
+}
+
+.testifier {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimony figcaption {
+  padding: 10px;
+  text-align: center;
+}
+
+.testimony figcaption strong {
+  font-size: 20px;
+}
+
+.testimony figcaption p {
+  text-align: start;
+  margin-top: 10px;
+}
+
+/* ..................................Our Partners.............................  */
+
+.partners {
+  background-color: gray;
+}
+
+.partners section {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 100px; */
+}
+
+/* ...............................footer.........................  */
+
+footer {
+  height: fit-content;
+  background-color: rgb(3, 25, 3);
+  padding: 10px;
+  color: white;
+}
+
+.social {
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+
+.social h3 {
+  margin: 10px 0px;
+  font-size: 25px;
+}
+
+.icons {
+  display: flex;
+  width: 8%;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-between;
+}
+
+.icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about,
+  .services,
+  .contact,
+  .testimonial {
+    padding: 70px 20px;
+  }
+
+  .about section {
+    height: 70vh;
+  }
+
+  .fig {
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .fig figure {
+    height: 80vh;
+    font-size: 15px;
+    width: 45%;
+  }
+
+  .about article {
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .second_para {
+    display: none;
+  }
+
+  .contactAddress {
+    height: 70vh;
+  }
+
+  .contactAddress form {
+    gap: 10px;
+  }
+
+  .address a {
+    font-size: 15px;
+  }
+
+  .testimony figure {
+    width: 45%;
+    height: 100vh;
+  }
+
+  .testimony {
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .testifier {
+    width: 100px;
+    height: 100px;
+  }
+
+  .partners section {
+    height: fit-content;
+  }
+
+  .icons {
+    width: 100%;
+    justify-content: start;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about section {
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+  }
+
+  .about section img {
+    width: 100%;
+  }
+
+  .about section article {
+    width: 100%;
+    gap: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+    font-size: 20px;
+  }
+
+  .fig figure {
+    width: 100%;
+  }
+
+  .contactAddress {
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+  }
+
+  .address,
+  .contactAddress form {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .testimony figure {
+    width: 100%;
+  }
+}
